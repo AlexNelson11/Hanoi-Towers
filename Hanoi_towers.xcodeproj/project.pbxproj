@@ -14,6 +14,10 @@
 		FA22F4CB1C99406000C913F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA22F4C91C99406000C913F9 /* LaunchScreen.storyboard */; };
 		FA22F4D61C99406000C913F9 /* Hanoi_towersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F4D51C99406000C913F9 /* Hanoi_towersTests.swift */; };
 		FA22F4E11C99406000C913F9 /* Hanoi_towersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22F4E01C99406000C913F9 /* Hanoi_towersUITests.swift */; };
+		FA22F4EF1C9941B200C913F9 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = FA22F4EE1C9941B200C913F9 /* red.png */; };
+		FA22F4F11C9941BB00C913F9 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FA22F4F01C9941BB00C913F9 /* yellow.png */; };
+		FA22F4F31C9941C500C913F9 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = FA22F4F21C9941C500C913F9 /* green.png */; };
+		FA3681461CE31639006B0A2B /* Screen Shot 2016-05-11 at 4.25.42 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3681451CE31639006B0A2B /* Screen Shot 2016-05-11 at 4.25.42 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		FA22F4DC1C99406000C913F9 /* Hanoi_towersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hanoi_towersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA22F4E01C99406000C913F9 /* Hanoi_towersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hanoi_towersUITests.swift; sourceTree = "<group>"; };
 		FA22F4E21C99406000C913F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA22F4EE1C9941B200C913F9 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		FA22F4F01C9941BB00C913F9 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		FA22F4F21C9941C500C913F9 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		FA3681451CE31639006B0A2B /* Screen Shot 2016-05-11 at 4.25.42 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-05-11 at 4.25.42 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				FA22F4C71C99406000C913F9 /* Assets.xcassets */,
 				FA22F4C91C99406000C913F9 /* LaunchScreen.storyboard */,
 				FA22F4CC1C99406000C913F9 /* Info.plist */,
+				FA22F4F01C9941BB00C913F9 /* yellow.png */,
+				FA22F4EE1C9941B200C913F9 /* red.png */,
+				FA22F4F21C9941C500C913F9 /* green.png */,
+				FA3681451CE31639006B0A2B /* Screen Shot 2016-05-11 at 4.25.42 PM.png */,
 			);
 			path = Hanoi_towers;
 			sourceTree = "<group>";
@@ -229,7 +241,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA22F4F11C9941BB00C913F9 /* yellow.png in Resources */,
 				FA22F4CB1C99406000C913F9 /* LaunchScreen.storyboard in Resources */,
+				FA22F4F31C9941C500C913F9 /* green.png in Resources */,
+				FA22F4EF1C9941B200C913F9 /* red.png in Resources */,
+				FA3681461CE31639006B0A2B /* Screen Shot 2016-05-11 at 4.25.42 PM.png in Resources */,
 				FA22F4C81C99406000C913F9 /* Assets.xcassets in Resources */,
 				FA22F4C61C99406000C913F9 /* Main.storyboard in Resources */,
 			);
@@ -482,6 +498,7 @@
 				FA22F4E71C99406000C913F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA22F4E81C99406000C913F9 /* Build configuration list for PBXNativeTarget "Hanoi_towersTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				FA22F4EA1C99406000C913F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA22F4EB1C99406000C913F9 /* Build configuration list for PBXNativeTarget "Hanoi_towersUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				FA22F4ED1C99406000C913F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

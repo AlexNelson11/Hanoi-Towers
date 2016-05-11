@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hanoi_towers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06l-HS-ldv">
+                                <rect key="frame" x="51" y="599" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrO-TM-6D2">
+                                <rect key="frame" x="224" y="432" width="133" height="100"/>
+                                <connections>
+                                    <action selector="selectRightTower" destination="BYZ-38-t0r" eventType="touchUpInside" id="73J-2X-tZ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPm-b9-jF0">
+                                <rect key="frame" x="20" y="432" width="133" height="100"/>
+                                <connections>
+                                    <action selector="selectLeftTower" destination="BYZ-38-t0r" eventType="touchUpInside" id="asR-iB-JFB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS1-XK-9BE">
+                                <rect key="frame" x="121" y="308" width="133" height="100"/>
+                                <connections>
+                                    <action selector="selectTopTower" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0c-0L-yE5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-05-11 at 4.25.42 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zyg-fW-aSo">
+                                <rect key="frame" x="185" y="280" width="5" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-05-11 at 4.25.42 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="eNh-5G-WbF">
+                                <rect key="frame" x="288" y="404" width="5" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-05-11 at 4.25.42 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="riJ-hI-f3k">
+                                <rect key="frame" x="84" y="404" width="5" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8w-Qr-eUe">
+                                <rect key="frame" x="20" y="497" width="133" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLF-05-ail">
+                                <rect key="frame" x="121" y="373" width="133" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqb-ni-XrI">
+                                <rect key="frame" x="224" y="497" width="133" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OP7-3k-iSF">
+                                <rect key="frame" x="36" y="464" width="100" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPv-CU-oWr">
+                                <rect key="frame" x="240" y="464" width="100" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HkK-ld-7vc">
+                                <rect key="frame" x="137" y="340" width="100" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jg2-Fk-AFP">
+                                <rect key="frame" x="255" y="432" width="66" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFC-i5-c4k">
+                                <rect key="frame" x="53" y="432" width="66" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-79-nRH">
+                                <rect key="frame" x="155" y="308" width="66" height="35"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="06l-HS-ldv" id="G3L-Sp-gUf"/>
+                        <outlet property="leftLargeDiscImageView" destination="n8w-Qr-eUe" id="QGk-kl-bjQ"/>
+                        <outlet property="leftMediumDiscImageView" destination="OP7-3k-iSF" id="zXz-b8-cmq"/>
+                        <outlet property="leftSmallDiscImageView" destination="PFC-i5-c4k" id="19p-cM-FGJ"/>
+                        <outlet property="rightLargeDiscImageView" destination="wqb-ni-XrI" id="ss9-06-bXS"/>
+                        <outlet property="rightMediumDiscImageView" destination="gPv-CU-oWr" id="h1g-ka-Cfz"/>
+                        <outlet property="rightSmallDiscImageView" destination="jg2-Fk-AFP" id="2pt-fO-kVX"/>
+                        <outlet property="topLargeDiscImageView" destination="fLF-05-ail" id="lhe-vu-wCo"/>
+                        <outlet property="topMediumDiscImageView" destination="HkK-ld-7vc" id="aPM-fg-nVZ"/>
+                        <outlet property="topSmallDiscImageView" destination="bG1-79-nRH" id="y9m-d7-3et"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="363.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2016-05-11 at 4.25.42 PM.png" width="1" height="2"/>
+    </resources>
 </document>
